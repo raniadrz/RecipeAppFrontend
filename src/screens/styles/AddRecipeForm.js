@@ -1,7 +1,9 @@
 // styles.js
+import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 
 export const styles = {
   container: {
+    width: wp('50%'), // Take up 50% of the width on larger screens
     flex: 1,
     padding: 20,
     backgroundColor: '#fff',
