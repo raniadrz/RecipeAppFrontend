@@ -5,8 +5,6 @@ import FoodDetails from '../components/RecipeDetails';
 import AddRecipeForm from '../screens/AddRecipeForm';
 import HomeScreen from '../screens/HomeScreen';
 
-
-
 const Stack = createNativeStackNavigator();
 
 function AppNavigation() {

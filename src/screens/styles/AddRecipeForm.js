@@ -1,120 +1,122 @@
-// styles.js
-import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
-
-export const styles = {
+const styles = {
   container: {
-    width: wp('50%'), // Take up 50% of the width on larger screens
     flex: 1,
-    padding: 20,
+    padding: 16,
     backgroundColor: '#fff',
   },
+
+  stepTitle: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 16,
+  },
+
   labelContainer: {
-    marginBottom: 10,
+    marginBottom: 16,
   },
+
   label: {
-    fontSize: 18,
+    fontSize: 16,
+    marginBottom: 8,
   },
-  input_name: {
-    height: 40,
-    borderColor: 'gray',
-    borderWidth: 1,
-    paddingHorizontal: 5,
-  },
+
   input: {
-    height: 100,
-    borderColor: 'gray',
     borderWidth: 1,
-    paddingHorizontal: 5,
+    borderColor: '#ccc',
+    borderRadius: 8,
+    padding: 8,
+    fontSize: 16,
   },
+
+  button: {
+    backgroundColor: '#FD8D14',
+    padding: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginVertical: 16,
+  },
+
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+  },
+
+  button_cancel: {
+    backgroundColor: '#ccc',
+    padding: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginVertical: 16,
+  },
+
+  buttonText_Cancel: {
+    color: '#fff',
+    fontSize: 16,
+  },
+
+  button_next: {
+    backgroundColor: '#4CAF50',
+    padding: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginVertical: 16,
+  },
+
+  buttonText_Next: {
+    color: '#fff',
+    fontSize: 16,
+  },
+
+  button_prev: {
+    backgroundColor: '#2196F3',
+    padding: 16,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginVertical: 16,
+  },
+
+  buttonText_Prev: {
+    color: '#fff',
+    fontSize: 16,
+  },
+
   chipContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     marginBottom: 10,
   },
+
   chip: {
     marginHorizontal: 4,
     marginVertical: 2,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 16,
+    borderWidth: 1,
   },
-  buttonText: {
-    color: 'black',
-    fontSize: 16,
-    fontWeight: 'bold',
-    backgroundColor: '#dcdcdc',
-    textAlign: 'center', // Center the text horizontally
-    textAlignVertical: 'center', // Center the text vertically (for Android)
-  },
-  buttonText_Add: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: 'bold',
-    backgroundColor: '#8b0000',
-    textAlign: 'center', // Center the text horizontally
-    textAlignVertical: 'center', // Center the text vertically (for Android)
-  },
-  buttonText_Cancel: {
-    color: 'black',
-    fontSize: 16,
-    fontWeight: 'bold',
-    backgroundColor: '#dcdcdc',
-    textAlign: 'center', // Center the text horizontally
-    textAlignVertical: 'center', // Center the text vertically (for Android)
-  },
-  header: {
-    fontSize: 20,
-    marginBottom: 16,
-  },
-  button_add: {
-    backgroundColor: '#8b0000',
-    padding: 10,
-    borderRadius: 8,
-    marginBottom: 16,
-    shadowColor: '#000000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.4,
-    shadowRadius: 4,
-    elevation: 5,
-  },
-  button_cancel: {
-    backgroundColor: '#dcdcdc',
-    padding: 10,
-    borderRadius: 8,
-    marginBottom: 16,
-    shadowColor: '#000000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.4,
-    shadowRadius: 4,
-    elevation: 5,
-  },
-  button: {
-    backgroundColor: '#dcdcdc',
-    padding: 10,
-    borderRadius: 8,
-    marginBottom: 16,
-    shadowColor: '#000000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.4,
-    shadowRadius: 4,
-    elevation: 5,
-  },
-  imageContainer: {
-    shadowColor: '#000000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.4,
-    shadowRadius: 4,
-    elevation: 5,
-  },
-  image: {
-    width: 150,
-    height: 150,
-    borderRadius: 8,
-  },
+
   containerImages: {
-    flex: 1,
-    justifyContent: 'top',
     alignItems: 'center',
-  },
-  errorText: {
-    color: 'red',
     marginTop: 16,
   },
+
+  imageContainer: {
+    width: '100%',
+    height: 200,
+    borderRadius: 8,
+    overflow: 'hidden',
+  },
+
+  image: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'cover',
+  },
+
+  errorText: {
+    color: 'red',
+    marginTop: 8,
+  },
 };
+
+export { styles };
